@@ -1,4 +1,4 @@
-# homework
+
 const { router, text } = require('bottender/router');
 const SayHi = async context => {
     await context.sendText('hihi')
