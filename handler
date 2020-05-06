@@ -1,12 +1,12 @@
-const { router, text } = require('bottender/router');
-const SayHi = async context => {
-    await context.sendText('hihi')
-    return context.sendText('haha')
+const { router, text } = require('bottender/router'); // 這邊不知道是什麼
+const SayHi = async context => {  //定義函數的內容
+    await context.sendText('hihi')  //輸入hihi
+    return context.sendText('haha') //輸入haha
    }
    
-module.exports = async context => {
-    return router([
-        // return the SayHi action when receiving case-insensitive "hi" or "hello" text messages
-        text(/^(hi|hello)$/i, SayHi),
+module.exports = async context => {  //這邊不知道是什麼
+    return router([  //一個路由
+        
+        text(/^(hi|hello)$/i, SayHi),  //收到上述的指令後回傳hi hello
       ])
 };
