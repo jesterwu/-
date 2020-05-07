@@ -1,7 +1,7 @@
 const { router, text } = require('bottender/router');
 const SayHi = async context => {
-    await context.sendText('hihi')
-    return context.sendText('haha')
+    await context.send([{type: 'text',text:'world'}])
+    
    }
    
 module.exports=(' ',SayHi);
