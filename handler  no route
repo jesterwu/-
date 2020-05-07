@@ -4,4 +4,4 @@ const SayHi = async context => {
     return context.sendText('haha')
    }
    
-module.exports=('Hi',SayHi);
+module.exports=(' ',SayHi);
