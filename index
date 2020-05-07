@@ -1,0 +1,10 @@
+const { platform, router } = require('bottender/router')
+
+const handler = require('./handlers/handler.js')
+
+module.exports = async function App (context) {
+  return router([
+    // platform('messenger', MessengerAction),
+    platform('line', handler)
+  ])
+}
