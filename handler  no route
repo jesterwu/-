@@ -4,4 +4,4 @@ const SayHi = async context => {
     
    }
    
-module.exports=(' ',SayHi);
+module.exports=SayHi;
